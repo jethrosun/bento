@@ -6,3 +6,5 @@ __pycache__/
 *.json # functions in server/functions
 .vscode
 
+bento/server/functions
+bento/server/sessions

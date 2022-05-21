@@ -4,7 +4,8 @@ import argparse
 import logging
 import sys
 
-sys.path.append("../..")
+# sys.path.append("../..")
+sys.path.insert(0, '/home/jethros/dev/bento')
 from bento.client.api import ClientConnection
 from bento.common.protocol import *
 import bento.common.util as util
