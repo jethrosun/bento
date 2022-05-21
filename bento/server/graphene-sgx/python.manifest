@@ -14,7 +14,7 @@ loader.exec = file:/usr/bin/python3.5
 
 # Graphene environment, including the path of the library OS and the debug
 # option (inline/none).
-loader.preload = file:/home/vanilla/sgx/graphene/Runtime/libsysdb.so
+loader.preload = file:/home/jethros/sgx/graphene/Runtime/libsysdb.so
 loader.debug_type = none
 
 # Read application arguments directly from the command line. Don't use this on production!
@@ -33,7 +33,7 @@ loader.env.HOME = /home/user
 # Default glibc files, mounted from the Runtime directory in GRAPHENEDIR.
 fs.mount.lib.type = chroot
 fs.mount.lib.path = /lib
-fs.mount.lib.uri = file:/home/vanilla/sgx/graphene/Runtime
+fs.mount.lib.uri = file:/home/jethros/sgx/graphene/Runtime
 
 # Host-level libraries (e.g., /lib/x86_64-linux-gnu) required by the Python executable
 fs.mount.lib2.type = chroot
@@ -83,15 +83,15 @@ sgx.thread_num = 8
 # SGX trusted libraries
 
 # Glibc libraries
-sgx.trusted_files.ld = file:/home/vanilla/sgx/graphene/Runtime/ld-linux-x86-64.so.2
-sgx.trusted_files.libc = file:/home/vanilla/sgx/graphene/Runtime/libc.so.6
-sgx.trusted_files.libm = file:/home/vanilla/sgx/graphene/Runtime/libm.so.6
-sgx.trusted_files.libdl = file:/home/vanilla/sgx/graphene/Runtime/libdl.so.2
-sgx.trusted_files.librt = file:/home/vanilla/sgx/graphene/Runtime/librt.so.1
-sgx.trusted_files.libutil = file:/home/vanilla/sgx/graphene/Runtime/libutil.so.1
-sgx.trusted_files.libpthread = file:/home/vanilla/sgx/graphene/Runtime/libpthread.so.0
-sgx.trusted_files.libnssdns = file:/home/vanilla/sgx/graphene/Runtime/libnss_dns.so.2
-sgx.trusted_files.libresolve = file:/home/vanilla/sgx/graphene/Runtime/libresolv.so.2
+sgx.trusted_files.ld = file:/home/jethros/sgx/graphene/Runtime/ld-linux-x86-64.so.2
+sgx.trusted_files.libc = file:/home/jethros/sgx/graphene/Runtime/libc.so.6
+sgx.trusted_files.libm = file:/home/jethros/sgx/graphene/Runtime/libm.so.6
+sgx.trusted_files.libdl = file:/home/jethros/sgx/graphene/Runtime/libdl.so.2
+sgx.trusted_files.librt = file:/home/jethros/sgx/graphene/Runtime/librt.so.1
+sgx.trusted_files.libutil = file:/home/jethros/sgx/graphene/Runtime/libutil.so.1
+sgx.trusted_files.libpthread = file:/home/jethros/sgx/graphene/Runtime/libpthread.so.0
+sgx.trusted_files.libnssdns = file:/home/jethros/sgx/graphene/Runtime/libnss_dns.so.2
+sgx.trusted_files.libresolve = file:/home/jethros/sgx/graphene/Runtime/libresolv.so.2
 
 # Other libraries
 sgx.trusted_files.libexpat = file:/lib/x86_64-linux-gnu/libexpat.so.1
